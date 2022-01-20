@@ -1,3 +1,4 @@
+import 'package:editor_sdk/model/expression_context.dart';
 import 'package:flutter/material.dart';
 import 'package:code_builder/code_builder.dart';
 import 'package:editor_sdk/model/state.dart';
@@ -16,7 +17,7 @@ abstract class EditorType<T> {
   ///
   /// Generate expression of type
   ///
-  Expression expression();
+  Expression expression(ExpressionContext ctx);
 
   ///
   /// Save value to json
